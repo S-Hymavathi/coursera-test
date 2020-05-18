@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Assignment-2</title>
+	<style>
+		h1{
+			text-align: center;
+	}
+			.row {
+			width: 100%;
+			height: 150px;
+			margin-right:auto;
+			margin-left: auto;
+			
+		}
+		#chicken-tile, #beef-tile, #sushi-tile{
+	height: 250px;
+	margin-bottom: 15px;
+	position:relative;
+	border: 2px solid black;
+	overflow: hidden;
+	background-color: gray;
+	color:white;
+}
+#chicken-tile:hover, #beef-tile:hover, #sushi-tile:hover{
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+	
+	#chicken-tile span{
+	
+	position: absolute;
+	left : 100px;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	background-color: #FFC0CB;
+	color: #fff;
+}
+#beef-tile span{
+	position: absolute;
+	left : 100px;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	background-color:#CC0000;
+	color: #fff;
+	
+}
+#sushi-tile span{
+	position: absolute;
+	left : 100px;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	background-color:#CC9900;
+	color: #fff;
+}
+#chicken-tile p{
+	position: absolute;
+    color: black;
+    font-size: 100%;
+    bottom:70px; 
+
+}
+#beef-tile p{
+	position: absolute;
+    color: black;
+    font-size: 100%;
+    bottom: 70px;
+
+}
+#sushi-tile p{
+	position: absolute;
+    color: black;
+    font-size: 100%;
+    bottom: 60px;
+
+}
+
+	@media(min-width: 1200px){
+			.col-lg-3, .col-lg-4, .col-lg-6, .col-lg-12{
+				float: left;
+				
+			}
+			.col-lg-4{
+				width: 33%;
+			}
+			.col-lg-6{
+				width: 50%;
+			}
+			.col-lg-8{
+				width: 66.66%;
+			}
+			.col-lg-12{
+				width: 100%
+			}
+		}
+		@media(min-width: 992px) and (max-width: 1199px){
+			.col-md-4, .col-md-6, .col-md-8, .col-md-12{
+				float: left;
+				
+			}
+			.col-md-4{
+				width: 33%;
+			}
+			.col-md-6{
+				width: 50%;
+			}
+			.col-md-8{
+                 width: 66.66%;
+			}
+			.col-md-12{
+				width: 100%;
+			}
+		}
+		
+
+@media(max-width: 767px){
+	.col-xs-4, .col-xs-6, .col-xs-8, .col-xs-12{
+				float: left;
+			
+			}
+			.col-xs-4{
+				width: 33%;
+			}
+			.col-xs-6{
+				width: 50%;
+			}
+			.col-xs-8{
+				width: 66.66%;
+			}
+			.col-xs-12{
+				width: 100%;
+			}
+		}
+}
+
+	
+	</style>
+</head>
+<body>
+	<h1> Our Menu </h1>
+		<div class="row" style="text-align: center">
+		<div class="col-lg-4 col-md-6  col-xs-12"> <div id="chicken-tile" style="width: 360px;
+	margin: 0 auto 15px"> <span>Chicken</span><p>Lumber is the most common building material used for creating a chicken coop, yet it is also the priciest. Pressure-treated wood is relatively maintenance-free and resistant to pests, but there is some concern over the chemicals injected into the lumber.Tropical hardwoods and redwood are naturally resistant to rot and make a good choice . </p></div></div>
+		<div class="col-lg-4 col-md-6 col-xs-12"><div id="beef-tile" style="width: 360px;
+	margin: 0 auto 15px"> <span> Beef </span><p> Eating beef should not be a scary experience, it should be an enjoyable and flavorful experience! The headlines about fecal matter in ground beef was meant to draw attention and sensationalize this story, however, it is full of half-truths and incorrect information. When stories like these hit the newsstands and media waves,The black cattle ended up being quite resilient.</p></div></div>
+		<div class="col-lg-4 col-md-12  col-xs-12"><div id="sushi-tile" style="width: 360px;
+	margin: 0 auto 15px"> <span> Sushi </span> <p>Gray matter is excellent for communication among closely located brain regions, and white matter is key in communication among distantly located regions. You can think about this difference as road systems: local roads (i.e., gray matter) are most helpful when you want to transport goods within your neighboring regions. </p></div> </div>
+</div>
+</body>
